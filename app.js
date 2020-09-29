@@ -179,7 +179,10 @@ function onDeleteTask(e) {
   }
 }
 
-function showInfoMsg(title, body) {
+function showInfoMsg(
+  title = "Список задач пуск",
+  body = "У Вас нет ниодной задачи. Добавьте новую задачу."
+) {
   return `
     <div class="alert alert-success" role="alert">
   <h4 class="alert-heading">${title}</h4>
