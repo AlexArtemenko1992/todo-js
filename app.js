@@ -159,6 +159,7 @@ function deleteTask(id){
   console.log(objOfTasks[id])
   delete objOfTasks[id]
   if (!Object.keys(objOfTasks).length) {
+    container.innerHTML = ''
     container.insertAdjacentHTML('afterbegin',showInfoMsg('Список задач пуск', "У Вас нет ниодной задачи. Добавьте новую задачу."));
   }
 }
